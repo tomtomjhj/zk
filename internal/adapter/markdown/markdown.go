@@ -58,6 +58,7 @@ func NewParser(options ParserOpts, logger util.Logger) *Parser {
 					MultiWordTagEnabled: options.MultiWordTagEnabled,
 					ColontagEnabled:     options.ColontagEnabled,
 				},
+				&extensions.BlockIdExt{},
 			),
 		),
 		logger: logger,
